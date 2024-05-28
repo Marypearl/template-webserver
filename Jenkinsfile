@@ -11,6 +11,7 @@ pipeline {
                 sh "ls"
                 sh "pwd"
                 sh "zip -r webapp.zip ."
+                sh "ls"
             }
         }
         
