@@ -2,6 +2,7 @@ pipeline {
     agent any
     environment {
         SSH_CRED = credentials('webkey')
+        def CONNECT = 'ssh -o StrictHostKeyChecking=no ubuntu@ec2-54-227-111-45.compute-1.amazonaws.com'
     }
     stages {
         
